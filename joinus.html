@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Assignment 2 - CIT Cycle Ball V2 -->
+<!-- Author: Eoin Daly -->
+<html lang="en-IE">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="favicon.ico" type="Assignment2/favicon" />
+		<link rel="stylesheet" type="text/css" href="cycleBallStyles2.css">
+		<link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+		<title>Join Us - CIT Cycle Ball</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="header">CIT CYCLE BALL</h1>
+		</header>
+			<div class="topnav">
+			  <a href="index2.html">Home</a>
+			  <a href="excursions.html">Excursions</a>
+			  <a class="active" href="joinus.html">Join Us</a>
+			  <a href="contact.html">Contact Us</a>
+			</div>
+		<main>
+			<div id=joinf>
+			<form method="get" action="http://atlantis.cit.ie/displayvalues.php">
+				<p>
+					<label>First Name</label>
+					<!-- required autocomplete means it has to be filled in so that you can submit -->
+					<input required autocomplete="on" type="text" name="firstName">
+				</p>
+				<p>
+					<label>Surname</label>
+					<input required autocomplete="on" type="text" name="surname">
+				</p>
+				<p>
+					<label>Email</label>
+					<input required autocomplete="on" type="email" name="email">
+				</p>
+				<p>
+					<label>Phone Number</label>
+					<input required autocomplete="on" type="tel" name="phoneNum">
+				</p>
+				<p>
+					<label>Date of Birth</label>
+					<!-- type date now works on the new mozilla firefox -->
+					<input required autocomplete="on" type="date" name="bday">
+				</p>
+				<p>
+					<!-- originally had radio buttons but the drop down menu fit nicer with the rest of the input styles -->
+					<label for="level">Level of Experience</label>
+					<select id="level" name="level">
+					<option>Please select...</option>
+					<option value=“novice”>Novice</option>
+					<option value=“competent”>Competent</option>
+					<option value=“Expert”>Expert</option>
+					</select>
+				</p>
+				<p>
+					<label>Special Requests</label>
+					<!-- the placeholder gives the user a hint as to what must be entered into the text area -->
+					<textarea name="request" placeholder="e.g. Person you want on team... Name of team you want to join..."></textarea>
+				</p>
+				<input type="Submit" value="Submit">
+				<input type="Reset" name="Cancel">
+			</form>
+			</div>
+		</main>
+		<footer>
+			<div class="footer">
+				<p id="copy">Page created by Eoin Daly 2017 &copy;</p>
+			</div>
+		</footer>
+	</body>
+</html>

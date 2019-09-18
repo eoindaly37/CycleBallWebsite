@@ -1,0 +1,177 @@
+* {
+	margin: auto;
+	font-family: Arial, sans-serif;
+}
+.header {
+	background-color: black;
+	/*found this font on google fonts, I used it because I believe it really suits the sport*/
+	font-family: 'Fugaz One', cursive;
+	font-size: 27pt;
+	color: white;
+	min-height: 40px;
+	float: left;
+	width: 100%;
+	clear: both;
+}
+.topnav {
+  color: black;
+  clear: both;
+}
+/*only changes styles for the links on the navigation bar*/
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/*makes it a different colour when you hover over it*/
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/*active is for the tab that is open*/
+.topnav a.active {
+    background-color: #190575;
+    color: white;
+}
+#video {
+	float: left;
+	clear: both;
+}
+#welcome {
+	float: left;
+	clear: right;
+	max-height: 315;
+	width: 55%;
+	padding: 20px;
+	text-align: center;
+}
+.column {
+    float: left;
+    padding: 10px;
+    width: 31%;
+    height: 175px;
+}
+/*the nth child method allowed me to use different colours on the table to match the colours of the legend (my 3 column layout)*/
+.column:nth-child(1) {
+	background-color: #190575;
+	color: white;
+}
+.column:nth-child(2) {
+	background-color: #4CAF50;
+}
+.column:nth-child(3) {
+	background-color: #dd0b12;
+	color: white;
+}
+.row {
+    content: "";
+    clear: both;
+    margin: 20px 10px;
+    height: 200px;
+}
+.footer {
+	margin: 50px 0px 0px 0px;
+	clear: both;
+	width: 100%;
+	text-align: left;
+	height: 23px;
+	font-size: 18px;
+	background-color: black;
+	color: white;
+	/*constantly had trouble with the position of the footer as it reacted differently to my different pages. Ultimately decided relative was the best*/
+	position: relative;
+}
+table {
+	text-align: center;
+	border-style: solid;
+	border: 3px;
+	clear: both;
+	margin-top: 10px;
+	border-collapse: collapse;
+}
+.weekday {
+	font-weight: bold;
+}
+td {
+	width: 14.28%;
+}
+table tr td:nth-child(4) {
+    background: #190575;
+}
+table tr:nth-child(2) td:nth-child(4) {
+	background-color: black;
+	color: white;
+}
+th {
+	background-color: white;
+	color: black;
+}
+table {
+	background-color: black;
+	color: white;
+	font-size: 150%;
+	margin-bottom: 40px;
+}
+.trip {
+	background-color: #4CAF50;
+}
+#final {
+	background-color: #dd0b12;
+}
+form {
+	clear: both;
+	text-align: center;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #190575;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #ddd;
+}
+#joinf {
+    border-radius: 5px;
+    padding: 20px;
+}
+.ballmap {
+	display: inline-block;
+	clear: left;
+	float: left;
+	margin-left: 10px;
+	width: 45%;
+}
+.twitter {
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+	border-style: solid;
+	border-color: #190575
+}
+.details {
+	display: block;
+	clear: both;
+	width: 100%;
+	border-left: 5px solid #190575;
+	margin-top: 10px;
+}
